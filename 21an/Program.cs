@@ -30,9 +30,9 @@ namespace Tjugoettan
                     svar = int.TryParse(Console.ReadLine(), out n);
                 }
                 Console.WriteLine();
-                SwitchMeny(n);
+                Tjugoettan(n);
             }
-            static void SwitchMeny(int n)
+            static void Tjugoettan(int n)
             {
                 switch (n)
                 {
