@@ -19,7 +19,7 @@ namespace Tjugoettan
             {
                 Console.WriteLine("Välj ett alternativ");
                 Console.WriteLine("1. Spela 21:an");
-                Console.WriteLine("2. Visa senaste vinnaren");
+                Console.WriteLine("2. Visa senaste vinnarna");
                 Console.WriteLine("3. Spelets regler");
                 Console.WriteLine("4. Avsluta programmet");
                 Console.Write("Svar: ");
@@ -83,6 +83,7 @@ namespace Tjugoettan
                             else if (DatorSumma == 21)
                             {
                                 DatornVann(SpelareSumma, DatorSumma);
+                                svar = "";
                                 count = 1;
                             }
                             else
@@ -127,7 +128,7 @@ namespace Tjugoettan
                         SenasteVinnare.Reverse();
                         for (int plats = 0; plats < SenasteVinnare.Count; plats++)
                         {
-                            Console.WriteLine($"{plats+1}. {SenasteVinnare[plats]}");
+                            Console.WriteLine($"{plats + 1}. {SenasteVinnare[plats]}");
                         }
                         SenasteVinnare.Reverse();
                         Console.WriteLine();
